@@ -1,0 +1,139 @@
+﻿
+
+<script>
+    let array = [];
+  
+
+
+
+    function getmethod() {
+
+    return fetch("https://pokeapi.co/api/v2/pokemon")
+            .then((response) => response.json())
+            .then((json) => console.log(json));
+          //  .them(response.push(array));
+
+
+
+    }
+
+      function printmethod() {
+       
+     open("https://pokeapi.co/api/v2/pokemon")
+           .then((response) => response.json())
+           .then((json) => console.log(json));
+         //  console.log(array);
+
+     
+    }
+ 
+
+           
+          
+
+    
+    var app = angular.module("myApp", ["ngRoute"]);
+    app.config(function ($routeProvider) {
+        $routeProvider
+            .when("/", {
+                templateUrl: "main.htm"
+            })
+            .when("/red", {
+                templateUrl: "red.htm"
+            })
+            .when("/green", {
+                templateUrl: "green.htm"
+            })
+            .when("/blue", {
+                templateUrl: "blue.htm"
+            });
+    });
+    
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>To-do CRUD</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+    <div ng-view></div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <p><a href="get">Read</a></p>
+
+            <p>
+                <a href="post">Create</a>
+            </p>
+            <p>
+                <a href="put">Update/Replace</a>
+            </p>
+            <p>
+                <a href="delete">DELETE</a>
+            </p>
+        </div>
+    </div>
+    
+
+    <div class="data" href="~/css/registration.css">
+
+      
+        <form name="form1" action="modified.php" method="post" enctype="multipart/form-data">
+         
+
+        </form>
+
+    </div>
+    
+ 
+
+        <input type="button" value="View Data" onclick="document.writeln(printmethod())" id="submit">
+  
+
+    <br /><br /> <br /><br /> <br /><br /> <br /><br />
+    
+    <div class="pics">
+        <img class="pics" src="~/pic1.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic2.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic3.jpg" height="100" width="100" />
+        <img class ="pics" src="~/pic4.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic5.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic6.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic7.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic1.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic2.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic3.jpg" height="100" width="100" />
+        <img class ="pics" src="~/pic4.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic5.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic6.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic7.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic1.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic2.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic3.jpg" height="100" width="100" />
+        <img class ="pics" src="~/pic4.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic5.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic6.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic7.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic1.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic2.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic3.jpg" height="100" width="100" />
+        <img class ="pics" src="~/pic4.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic5.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic6.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic7.jpg" height="100" width="100" /> 
+        <img class="pics" src="~/pic1.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic2.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic3.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic7.jpg" height="100" width="100" />
+        <img class ="pics" src="~/pic4.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic5.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic6.jpg" height="100" width="100" />
+        <img class="pics" src="~/pic7.jpg" height="100" width="100" />
+     </div>
+
+</body>
+</html>
